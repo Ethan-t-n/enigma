@@ -1,6 +1,8 @@
 require './lib/enigma'
 require 'date'
 require './spec/spec_helper.rb'
+require 'simplecov'
+SimpleCov.start
 
 describe Enigma do
   before(:each) do
