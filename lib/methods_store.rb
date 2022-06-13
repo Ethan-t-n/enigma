@@ -53,4 +53,13 @@ class MethodsStore
     date_string[-2..-1] + date_string[-4..-3] + date_string[-6..-5]
   end
 
+  def random_key
+    numbers = (0..9).to_a
+    key = ""
+    5.times do
+      key += numbers.sample.to_s
+    end
+    key
+  end
+
 end
