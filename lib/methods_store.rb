@@ -61,5 +61,25 @@ class MethodsStore
     end
     key
   end
+    #this blocker took me awhile but I am glad
+    #I messed around in my sandbox
+    #(created 3 classes and specs on vs code to visualize without the extra)
+    #as well as spent an hour and 15 minutes
+    #on google
+    #I will come back to refactor. My head hurts from
+    #looking at so many words on google lol
+  def change_text
+    correct = 0
+    @input_array.each_with_index do |char, index|
+      if !@characters.include?(char)
+        @output_array << char
+        correct += 1
+      else
+        index_of_char = @characters.index(char)
+        key = @shifts.keys[(index - correct) % 4]
+        @output_array << @characters.rotate(@shifts[key])[index_of_char]
+      end
+    end
+  end
 
 end

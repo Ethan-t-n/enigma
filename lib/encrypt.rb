@@ -9,6 +9,12 @@ class Encrypt < MethodsStore
       @characters = ("a".."z").to_a << " "
     end
 
+    def encrypt
+      @input_array = @message.split("")
+      @output_array = []
+      change_text
+      @output_array.join
+    end
 
 
 

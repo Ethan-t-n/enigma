@@ -52,4 +52,13 @@ describe Encrypt do
     expect(@encrypt.encrypt).to eq "keder ohulw"
   end
 
+  it 'is a hash' do
+    expected = {
+      encryption: "keder ohulw",
+      key: "02715",
+      date: "040895"
+    }
+    expect(@encrypt.output).to eq expected
+  end
+
 end
