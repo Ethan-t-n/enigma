@@ -95,17 +95,44 @@
           1,
           null,
           1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/ethan/enigma/lib/decrypt.rb": {
+        "lines": [
+          1,
+          null,
+          1,
           12,
           12,
           null,
           null,
           1,
-          1,
-          null,
-          null,
-          1,
           2,
           2,
+          10,
           2,
           2,
           null,
@@ -113,8 +140,6 @@
           1,
           null,
           1,
-          null,
-          null,
           null,
           null,
           null,
@@ -124,6 +149,6 @@
         ]
       }
     },
-    "timestamp": 1655153512
+    "timestamp": 1655155549
   }
 }
