@@ -23,7 +23,4 @@ class Encrypt < MethodsStore
       date: @date
     }
     end
-
-
-
 end
