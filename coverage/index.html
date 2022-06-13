@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.12.3/application.js' type='text/javascript'></script>
     <link href='./assets/0.12.3/application.css' media='screen, projection, print' rel='stylesheet' type='text/css' />
-    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_red.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_green.png" />
     <link rel="icon" type="image/png" href="./assets/0.12.3/favicon.png" />
   </head>
 
@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-06-13T12:25:57-06:00">2022-06-13T12:25:57-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-06-13T12:28:53-06:00">2022-06-13T12:28:53-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -22,15 +22,15 @@
   <h2>
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
-      <span class="red">
-  78.95%
+      <span class="green">
+  100.0%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.53
+         2.07
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>19</b> relevant lines,
-    <span class="green"><b>15</b> lines covered</span> and
-    <span class="red"><b>4</b> lines missed. </span>
-    (<span class="red">
-  78.95%
+    <b>28</b> relevant lines,
+    <span class="green"><b>28</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed. </span>
+    (<span class="green">
+  100.0%
 </span>
 )
   </div>
@@ -72,23 +72,23 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#ee3405093b4a02531aeed755506479d2f60be2d4" class="src_link" title="lib/encrypt.rb">lib/encrypt.rb</a></td>
-            <td class="yellow strong cell--number t-file__coverage">83.33 %</td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">15</td>
             <td class="cell--number">6</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">1.50</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.67</td>
             
           </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#867ad9b97b1865621cebf61d0ddf8f93032744ba" class="src_link" title="lib/methods_store.rb">lib/methods_store.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">76.92 %</td>
-            <td class="cell--number">29</td>
-            <td class="cell--number">13</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">1.54</td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">51</td>
+            <td class="cell--number">22</td>
+            <td class="cell--number">22</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">2.18</td>
             
           </tr>
         
@@ -113,8 +113,8 @@
   <div class="header">
     <h3>lib/encrypt.rb</h3>
     <h4>
-      <span class="yellow">
-  83.33%
+      <span class="green">
+  100.0%
 </span>
 
       lines covered
@@ -124,8 +124,8 @@
 
     <div class="t-line-summary">
       <b>6</b> relevant lines.
-      <span class="green"><b>5</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -224,8 +224,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="9">
-            
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
             
 
             
@@ -309,8 +309,8 @@
   <div class="header">
     <h3>lib/methods_store.rb</h3>
     <h4>
-      <span class="red">
-  76.92%
+      <span class="green">
+  100.0%
 </span>
 
       lines covered
@@ -319,9 +319,9 @@
     
 
     <div class="t-line-summary">
-      <b>13</b> relevant lines.
-      <span class="green"><b>10</b> lines covered</span> and
-      <span class="red"><b>3</b> lines missed.</span>
+      <b>22</b> relevant lines.
+      <span class="green"><b>22</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -492,40 +492,40 @@
 
             
 
-            <code class="ruby">    assign_key(key) unless self.class == Crack</code>
+            <code class="ruby">    assign_key(key)</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="16">
-            
-            
-
+          <li class="covered" data-hits="3" data-linenumber="16">
+            <span class="hits">3</span>
             
 
-            <code class="ruby">    generate_shift_keys unless self.class == Crack</code>
+            
+
+            <code class="ruby">    generate_shift_keys</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="17">
-            
-            
-
+          <li class="covered" data-hits="3" data-linenumber="17">
+            <span class="hits">3</span>
             
 
-            <code class="ruby">    generate_offsets unless self.class == Crack</code>
+            
+
+            <code class="ruby">    generate_offsets</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="18">
-            
-            
-
+          <li class="covered" data-hits="3" data-linenumber="18">
+            <span class="hits">3</span>
             
 
-            <code class="ruby">    generate_shifts unless self.class == Crack</code>
+            
+
+            <code class="ruby">    generate_shifts</code>
           </li>
         </div>
       
@@ -640,7 +640,249 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="29">
+          <li class="covered" data-hits="1" data-linenumber="29">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def assign_key(key)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="30">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    key == nil ? @key = random_key : @key = key</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def generate_shift_keys</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="34">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    @shift_keys = {A: @key[0..1].to_i, B: @key[1..2].to_i, C: @key[2..3].to_i, D: @key[3..4].to_i}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="35">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="36">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="37">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def generate_offsets</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="38">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    last_4 = (@date.to_i**2).to_s[-4..-1]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="39">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    @offsets = {A: last_4[0].to_i, B: last_4[1].to_i, C: last_4[2].to_i, D: last_4[3].to_i}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="40">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="41">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="42">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def generate_shifts</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="43">
+            
+            
+
+            
+
+            <code class="ruby">    @shifts = {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="44">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      A: @shift_keys[:A] + @offsets[:A],</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="45">
+            
+            
+
+            
+
+            <code class="ruby">      B: @shift_keys[:B] + @offsets[:B],</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="46">
+            
+            
+
+            
+
+            <code class="ruby">      C: @shift_keys[:C] + @offsets[:C],</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="47">
+            
+            
+
+            
+
+            <code class="ruby">      D: @shift_keys[:D] + @offsets[:D]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="48">
+            
+            
+
+            
+
+            <code class="ruby">    }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="49">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="50">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="51">
             
             
 
