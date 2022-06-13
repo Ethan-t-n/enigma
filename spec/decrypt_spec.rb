@@ -26,4 +26,10 @@ describe Decrypt do
     expect(decrypt.date).to eq expected
   end
 
+  it 'a random key' do
+    decrypt = Decrypt.new("keder ohulw")
+    expect(decrypt.key.class).to be String
+    expect(decrypt.key.length).to be 5
+  end
+
 end
