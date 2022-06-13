@@ -48,4 +48,9 @@ class MethodsStore
     }
   end
 
+  def todays_date
+    date_string = Date::today.strftime.delete("-")
+    date_string[-2..-1] + date_string[-4..-3] + date_string[-6..-5]
+  end
+
 end
