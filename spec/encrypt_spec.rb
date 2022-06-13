@@ -48,4 +48,8 @@ describe Encrypt do
     expect(@encrypt.shifts).to eq expected
   end
 
+  it 'can encrypt' do
+    expect(@encrypt.encrypt).to eq "keder ohulw"
+  end
+
 end
