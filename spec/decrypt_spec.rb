@@ -19,4 +19,11 @@ describe Decrypt do
     expect(@decrypt.date).to eq "040895"
   end
 
+  it 'uses todays date' do
+    decrypt = Decrypt.new("keder ohulw", "02715")
+    date_string = Date::today.strftime.delete("-")
+    expected = date_string[-2..-1] + date_string[-4..-3] + date_string[-6..-5]
+    expect(decrypt.date).to eq expected
+  end
+
 end
