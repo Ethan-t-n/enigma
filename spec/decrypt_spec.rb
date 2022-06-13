@@ -52,5 +52,14 @@ describe Decrypt do
     expect(@decrypt.decrypt).to eq "hello world"
   end
 
+  it 'is a hash' do
+    expected = {
+      decryption: "hello world",
+      key: "02715",
+      date: "040895"
+    }
+    expect(@decrypt.output).to eq expected
+  end
+
 
 end
