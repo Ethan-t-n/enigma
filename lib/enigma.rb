@@ -1,5 +1,5 @@
 class Enigma
-    
+
     def iinitialize
     end
 
