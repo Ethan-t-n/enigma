@@ -13,4 +13,12 @@ class Decrypt < MethodsStore
     @output_array.join
   end
 
+  def output
+    {
+      decryption: decrypt,
+      key: @key,
+      date: @date
+    }
+  end
+
 end
