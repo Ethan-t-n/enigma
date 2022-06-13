@@ -18,4 +18,14 @@ describe Encrypt do
     expect(@encrypt.key).to eq "02715"
     expect(@encrypt.date).to eq "040895"
   end
+
+  it 'uses todays date' do
+    encrypt = Encrypt.new("hello world", "02715")
+
+    date_string = Date::today.strftime.delete("-")
+    expected = date_string[-2..-1] + date_string[-4..-3] + date_string[-6..-5]
+
+    expect(encrypt.date).to eq expected
+  end
+
 end
