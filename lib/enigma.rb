@@ -7,4 +7,8 @@ class Enigma
       Encrypt.new(message, key, date).output
     end
 
+    def decrypt(ciphertext, key = nil, date = nil)
+      Decrypt.new(ciphertext, key, date).output
+    end
+
 end

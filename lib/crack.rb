@@ -4,5 +4,6 @@ class Crack < MethodsStore
     @ciphertext = ciphertext.downcase
     super(nil, date)
   end
+  
 
 end
