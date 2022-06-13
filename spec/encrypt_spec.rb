@@ -21,11 +21,15 @@ describe Encrypt do
 
   it 'uses todays date' do
     encrypt = Encrypt.new("hello world", "02715")
-
     date_string = Date::today.strftime.delete("-")
     expected = date_string[-2..-1] + date_string[-4..-3] + date_string[-6..-5]
-
     expect(encrypt.date).to eq expected
+  end
+
+  it 'generates a random key' do
+    encrypt = Encrypt.new("hello world")
+    expect(encrypt.key.class).to be String
+    expect(encrypt.key.length).to be 5
   end
 
 end
