@@ -1,7 +1,59 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/ethan/enigma/lib/methods_store.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          3,
+          3,
+          3,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/ethan/enigma/lib/encrypt.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
     },
-    "timestamp": 1655138207
+    "timestamp": 1655144757
   }
 }

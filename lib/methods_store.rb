@@ -18,4 +18,12 @@ class MethodsStore
     generate_shifts unless self.class == Crack
   end
 
+  def generate_characters
+    @characters = ("a".."z").to_a << " "
+  end
+
+  def assign_date(date)
+    date == nil ? @date = todays_date : @date = date
+  end
+
 end
