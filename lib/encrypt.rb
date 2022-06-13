@@ -16,6 +16,14 @@ class Encrypt < MethodsStore
       @output_array.join
     end
 
+    def output
+    {
+      encryption: encrypt,
+      key: @key,
+      date: @date
+    }
+    end
+
 
 
 end
