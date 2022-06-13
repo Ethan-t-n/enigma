@@ -48,7 +48,7 @@ describe Decrypt do
     expect(@decrypt.shifts).to eq expected
   end
 
-  it '8. decrypts the message' do
+  it 'decrypts the message' do
     expect(@decrypt.decrypt).to eq "hello world"
   end
 

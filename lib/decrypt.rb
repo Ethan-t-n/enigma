@@ -5,4 +5,12 @@ class Decrypt < MethodsStore
     super(key, date)
   end
 
+  def decrypt
+    @input_array = @ciphertext.split("")
+    @output_array = []
+    @shifts.transform_values! { |shift| shift * -1 }
+    change_text
+    @output_array.join
+  end
+
 end
