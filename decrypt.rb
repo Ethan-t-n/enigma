@@ -1,4 +1,4 @@
-require './helper.rb'
+require './spec_helper2.rb'
 
 if ARGV.count != 4 ||
   !File.exist?(ARGV[0]) ||
